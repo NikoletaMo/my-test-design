@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VFS Customer Portal Welcome</title>
   <style>
     /* Reset some default styles */
@@ -17,12 +18,15 @@
 
     table {
       width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
       border-collapse: collapse;
     }
 
     td {
       padding: 20px;
       text-align: left;
+      vertical-align: top;
     }
 
     img {
@@ -42,6 +46,13 @@
 
     ol {
       padding-left: 20px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 767px) {
+      body { font-size: 14px; }
+      table { max-width: 100%; }
+      td { padding: 10px; }
     }
   </style>
 </head>
