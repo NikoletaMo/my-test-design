@@ -2,17 +2,50 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VFS Customer Portal Welcome</title>
   <style>
-    table {
-      border-collapse: collapse;
+    /* Reset some default styles */
+    body, h3, p, ol, li { margin: 0; padding: 0; }
+
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 767px) {
+      body { font-size: 14px; }
+      .container { padding: 10px; }
+      .grid { display: block; }
+      .grid > * { display: block; margin-bottom: 20px; }
+    }
+
+    @media (min-width: 768px) {
+      .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+      .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .grid > * { margin-bottom: 0; }
+    }
+
+    /* Grid System */
+    .container {
       width: 100%;
+      box-sizing: border-box;
     }
-    td {
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
+
+    .grid > * {
+      text-align: center;
+    }
+
+    /* Other Styles */
     img {
       max-width: 100%;
       height: auto;
@@ -20,43 +53,41 @@
   </style>
 </head>
 <body>
-  <table>
-    <tr>
-      <td colspan="4">
+  <div class="container">
+    <div class="grid">
+      <div>
         <img src="cc064c22-3e49-4e28-a0e9-88c551fb64e2.png" alt="Image 1">
-      </td>
-    </tr>
-    <tr>
-      <td colspan="4">
+      </div>
+      <div>
         <img src="e122281a1e2e18128f066711f9ffc751.jpg" alt="Image 2">
-      </td>
-    </tr>
-    <tr>
-      <td colspan="4">
+      </div>
+      <div colspan="2">
         <h3>Dear customer,</h3>
         <p>VFS customer portal is now available for all our customers! The portal from Volvo Financial Services makes it easy for you to quickly access your contracts, invoices and assets from anywhere and at any time, with only a few clicks.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div>
         <img src="c1bf7318-bd2c-41d5-ba04-d3c7427cb8aa.png" alt="Image 3">
         <p>24/7 access</p>
-      </td>
-      <td>
+      </div>
+      <div>
         <img src="4b0e8677-02fa-45aa-a3b8-d8a828ac936a.png" alt="Image 4">
         <p>Online customer service</p>
-      </td>
-      <td>
+      </div>
+      <div>
         <img src="1e1c5742-329e-4234-afbf-abb2a79083c9.png" alt="Image 5">
         <p>Documents overview</p>
-      </td>
-      <td>
+      </div>
+      <div>
         <img src="2976adcd-89f5-49ec-98cd-ded5196d4eff.png" alt="Image 6">
         <p>Invoices and settlements</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="4">
+      </div>
+    </div>
+
+    <div class="grid">
+      <div colspan="4">
         <h3>To access the portal:</h3>
         <ol>
           <li>Click on the link below and complete the activation form</li>
@@ -70,26 +101,29 @@
           <li>Activate the account with entering a password</li>
           <li>Confirm the activation of Super User by entering a code number received in the SMS message</li>
         </ol>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="4">
+      </div>
+    </div>
+
+    <div class="grid">
+      <div colspan="4">
         <p>Do you need help with the activation? Do not hesitate to contact us, we are help to guide you through the process.</p>
         <p>E-mail address:</p>
         <p>Phone number:</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="4">
+      </div>
+    </div>
+
+    <div class="grid">
+      <div colspan="4">
         <p>Since we always strive for meeting our customer needs and improve our services, please provide us feedback on your experience within the Customer portal before logging out.</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="4">
+      </div>
+    </div>
+
+    <div class="grid">
+      <div colspan="4">
         <p>Yours sincerely,</p>
         <p>VFS.....</p>
-      </td>
-    </tr>
-  </table>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
