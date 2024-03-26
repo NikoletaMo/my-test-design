@@ -3,68 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volvo Experience System</title>
+  <title>VFS Customer Portal Welcome</title>
   <style>
     /* Reset some default styles */
-    body, h1, h2, p, button { margin: 0; padding: 0; }
+    body, table, td, h3, p, ol, li { margin: 0; padding: 0; }
 
     /* Base styles */
     body {
       font-family: Arial, sans-serif;
       font-size: 16px;
       color: #333;
-      background-color: #f5f5f5;
     }
 
-    .container {
+    table {
+      width: 100%;
       max-width: 800px;
       margin: 0 auto;
-      padding: 40px;
-      background-color: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-collapse: collapse;
     }
 
-    h1 {
-      font-size: 36px;
-      color: #004d8a;
-      margin-bottom: 20px;
+    td {
+      padding: 20px;
+      text-align: left;
+      vertical-align: top;
     }
 
-    h2 {
-      font-size: 24px;
-      color: #004d8a;
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    h3 {
       margin-bottom: 10px;
+      color: #555;
     }
 
-    p {
-      line-height: 1.5;
-      margin-bottom: 20px;
+    p, ol, li {
+      color: #777;
     }
 
-    button {
+    ol {
+      padding-left: 20px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 767px) {
+      body { font-size: 14px; }
+      table { max-width: 100%; }
+      td { padding: 10px; }
+    }
+
+    /* Background Colors */
+    .bg-gray { background-color: #f5f5f5; }
+    .bg-white { background-color: #fff; }
+    .bg-light-gray { background-color: #fafafa; }
+    .bg-dark-gray { background-color: #555; }
+
+    /* Button Styles */
+    .gray-button {
       display: inline-block;
-      background-color: #004d8a;
+      background-color: #555;
       color: #fff;
-      border: none;
-      border-radius: 4px;
+      text-decoration: none;
       padding: 10px 20px;
-      cursor: pointer;
-      font-size: 16px;
+      border-radius: 5px;
       transition: background-color 0.3s ease;
     }
 
-    button:hover {
-      background-color: #003866;
+    .gray-button:hover {
+      background-color: #444;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Volvo Experience System</h1>
-    <p>We noticed that you are using a browser that is no longer supported by our system. To enjoy the full Volvo experience, consider changing your browser.</p>
-    <h2>Content blocked</h2>
-    <p>Change your cookie settings to proceed.</p>
-    <button>Change Cookie Settings</button>
-  </div>
+  <table>
+    <tr>
+      <td colspan="2" class="bg-white">
+        <img src="cc064c22-3e49-4e28-a0e9-88c551fb64e2.png" alt="Image 1">
+      </td>
+      <td colspan="2" class="bg-white">
+        <img src="e122281a1e2e18128f066711f9ffc751.jpg" alt="Image 2">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bg-white">
+        <h3>Dear customer,</h3>
+        <p>VFS customer portal is now available for all our customers! The portal from Volvo Financial Services makes it easy for you to quickly access your contracts, invoices and assets from anywhere and at any time, with only a few clicks.</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="bg-light-gray">
+        <img src="c1bf7318-bd2c-41d5-ba04-d3c7427cb8aa.png" alt="Image 3">
+        <p>24/7 access</p>
+      </td>
+      <td class="bg-light-gray">
+        <img src="4b0e8677-02fa-45aa-a3b8-d8a828ac936a.png" alt="Image 4">
+        <p>Online customer service</p>
+      </td>
+      <td class="bg-light-gray">
+        <img src="1e1c5742-329e-4234-afbf-abb2a79083c9.png" alt="Image 5">
+        <p>Documents overview</p>
+      </td>
+      <td class="bg-light-gray">
+        <img src="2976adcd-89f5-49ec-98cd-ded5196d4eff.png" alt="Image 6">
+        <p>Invoices and settlements</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bg-white">
+        <h3>To access the portal:</h3>
+        <ol>
+          <li>Click on the link below and complete the activation form</li>
+          <li>Confirm the submission of the form by entering a code number received in the SMS message</li>
+        </ol>
+        <div style="text-align: center;">
+          <a href="https://www.vfsco.com/en-US/customer-portal.html" class="gray-button">Link to the portal</a>
+        </div>
+        <h3>To activate the Super User account:</h3>
+        <ol>
+          <li>You will receive a confirmation e-mail to the Super User e-mail address</li>
+          <li>Click on the link in the e-mail to confirm the e-mail address</li>
+          <li>Activate the account with entering a password</li>
+          <li>Confirm the activation of Super User by entering a code number received in the SMS message</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bg-light-gray">
+        <p>Do you need help with the activation? Do not hesitate to contact us, we are help to guide you through the process.</p>
+        <p>E-mail address:</p>
+        <p>Phone number:</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bg-white">
+        <p>Since we always strive for meeting our customer needs and improve our services, please provide us feedback on your experience within the Customer portal before logging out.</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bg-light-gray">
+        <p>Yours sincerely,</p>
+        <p>VFS.....</p>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
